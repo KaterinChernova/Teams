@@ -1,0 +1,133 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Teams</name>
+    </assembly>
+    <members>
+        <member name="M:Teams.Controllers.TeamController.Get(System.Int32)">
+            <summary>
+            Получение команды по идентификатору.
+            </summary>
+            <param name="id">Идентификатор команды.</param>
+            <returns>Модель команды.</returns>
+        </member>
+        <member name="M:Teams.Controllers.TeamController.GetTeamsBySport(System.Int32)">
+            <summary>
+            Получение команды по идентификатору.
+            </summary>
+            <param name="id">Идентификатор команды.</param>
+            <returns>Модель команды.</returns>
+        </member>
+        <member name="M:Teams.Controllers.TeamController.Create(Teams.Data.Models.TeamDto)">
+            <summary>
+            Добавление команды.
+            </summary>
+            <param name="teamDto">Модель для добавления.</param>
+            <returns>Идентификатор добавленного команды.</returns>
+        </member>
+        <member name="M:Teams.Controllers.TeamController.Update(Teams.Data.Models.TeamDto)">
+            <summary>
+            Обновление команды.
+            </summary>
+            <param name="teamDto">Модель для обновления.</param>
+            <returns>Идентификатор обновленной команды.</returns>
+        </member>
+        <member name="M:Teams.Controllers.TeamController.Delete(System.Int32)">
+            <summary>
+            Удаление команды.
+            </summary>
+            <param name="id">Модель для удаления.</param>
+            <returns>Идентификатор обновленной команды.</returns>
+        </member>
+        <member name="P:Teams.Data.Models.SportDto.Id">
+            <summary>
+            Идентификатор. Уникальный ключ.
+            </summary>
+        </member>
+        <member name="P:Teams.Data.Models.SportDto.Name">
+            <summary>
+            Наименование
+            </summary>
+        </member>
+        <member name="P:Teams.Data.Models.SportDto.Description">
+            <summary>
+            Описание
+            </summary>
+        </member>
+        <member name="T:Teams.Data.Models.TeamDto">
+            <summary>
+            Команда.
+            </summary>
+        </member>
+        <member name="P:Teams.Data.Models.TeamDto.Id">
+            <summary>
+            Идентификатор. Уникальный ключ.
+            </summary>
+        </member>
+        <member name="P:Teams.Data.Models.TeamDto.Name">
+            <summary>
+            Наименование команды.
+            </summary>
+        </member>
+        <member name="P:Teams.Data.Models.TeamDto.SportId">
+            <summary>
+            Идентификатор вида спорта.
+            </summary>
+        </member>
+        <member name="P:Teams.Data.Models.TeamDto.SportName">
+            <summary>
+            Наименование вида спорта.
+            </summary>
+        </member>
+        <member name="T:Teams.Data.Models.Team">
+            <summary>
+            Судья.
+            </summary>
+        </member>
+        <member name="P:Teams.Data.Models.Team.Id">
+            <summary>
+            Идентификатор. Уникальный ключ.
+            </summary>
+        </member>
+        <member name="P:Teams.Data.Models.Team.Name">
+            <summary>
+            ФИО
+            </summary>
+        </member>
+        <member name="T:Teams.Models.Settings.AppSettings">
+            <summary>
+            Настройки приложения.
+            </summary>
+        </member>
+        <member name="P:Teams.Models.Settings.AppSettings.Kestrel">
+            <summary>
+            Настройки сервера Kestrel.
+            </summary>
+        </member>
+        <member name="P:Teams.Models.Settings.AppSettings.Connection">
+            <summary>
+            Настройки подключения.
+            </summary>
+        </member>
+        <member name="T:Teams.Models.Settings.ConnectionSettings">
+            <summary>
+            Настройки подключения.
+            </summary>
+        </member>
+        <member name="P:Teams.Models.Settings.ConnectionSettings.DatabaseConnection">
+            <summary>
+            Настроки подключения к Базе данных.
+            </summary>
+        </member>
+        <member name="T:Teams.Models.Settings.KestrelSettings">
+            <summary>
+            Настройки сервера Kestrel.
+            </summary>
+        </member>
+        <member name="P:Teams.Models.Settings.KestrelSettings.Port">
+            <summary>
+            Порт.
+            </summary>
+        </member>
+    </members>
+</doc>
